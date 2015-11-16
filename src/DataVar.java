@@ -24,10 +24,22 @@ public class DataVar {
     private String mainSite = "http://www.arenda-piter.ru"; // Главный сайт
     private String comaDelimiter = ","; // Разделитель для csv файла
     private String newLineSeparator = "\n"; //Новая строка
-    private String dirtyLinks = "D:\\links.csv"; //Путь для сохранения грязного файла с дубликатами
-    private String links = "D:\\links.csv"; //Путь для сохранения грязного файла с дубликатами
+    private String dirtyLinks = "D:\\dirtyLinks.csv"; //Путь для сохранения грязного файла с дубликатами
+    private String links = "D:\\clearLinks.csv"; //Путь для сохранения грязного файла с дубликатами
     private String adData = "D:\\adData.csv"; // Путь для сохранения информации из отдельного объявления
 
+
+    public void setDirtyLinks(String dirtyLinks) {
+        this.dirtyLinks = dirtyLinks;
+    }
+
+    public String getLinks() {
+        return links;
+    }
+
+    public void setLinks(String links) {
+        this.links = links;
+    }
 
     public String getAdData() {
         return adData;

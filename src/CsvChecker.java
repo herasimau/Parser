@@ -5,23 +5,20 @@ import java.util.*;
 
 public class CsvChecker {
     public void checkDub() throws IOException {
-        String csvFile = "D:\\links.csv";
+
+        DataVar dataVar = new DataVar();
         BufferedReader br = null;
         String line = "";
-        String newLineSeparator = "\n";
-        String csv = "D:\\links2.csv";
-        FileWriter fileWriter = new FileWriter(csv);
+        FileWriter fileWriter = new FileWriter(dataVar.getLinks()); //Создаем writer и указываем путь где соханиться файл
         HashSet<String> lines = new HashSet<>();
 
-
-
+        
         try {
-            br = new BufferedReader(new FileReader(csvFile));
+            br = new BufferedReader(new FileReader(dataVar.getDirtyLinks())); //Читаем файл с дубликатами
             while ((line = br.readLine()) != null) {
                 if (lines.add(line)) {
                     fileWriter.append(line);
-                    fileWriter.append(newLineSeparator);
-                    System.out.println(line);
+                    fileWriter.append(dataVar.getNewLineSeparator());
                 }
             }
 

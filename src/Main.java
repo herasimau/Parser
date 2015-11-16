@@ -15,7 +15,7 @@ public class Main {
         csvChecker.checkDub();*/
 
         /* LinksAd - включаем когда нужно вынуть все ссылки на объявления с сайта и сохранить их в файл*/
-        
+
         LinksAd linksAd = new LinksAd();
         try {
             linksAd.getAllLinksAd();
