@@ -1,8 +1,9 @@
+package var;
 import org.jsoup.nodes.Document;
 import java.util.ArrayList;
 
 
-public class DataVar {
+public class MainVar {
 
     private  Document doc;
     private  Document docAd;
@@ -24,30 +25,8 @@ public class DataVar {
     private String mainSite = "http://www.arenda-piter.ru"; // Главный сайт
     private String comaDelimiter = ","; // Разделитель для csv файла
     private String newLineSeparator = "\n"; //Новая строка
-    private String dirtyLinks = "D:\\dirtyLinks.csv"; //Путь для сохранения грязного файла с дубликатами
-    private String links = "D:\\clearLinks.csv"; //Путь для сохранения грязного файла с дубликатами
-    private String adData = "D:\\adData.csv"; // Путь для сохранения информации из отдельного объявления
 
 
-    public void setDirtyLinks(String dirtyLinks) {
-        this.dirtyLinks = dirtyLinks;
-    }
-
-    public String getLinks() {
-        return links;
-    }
-
-    public void setLinks(String links) {
-        this.links = links;
-    }
-
-    public String getAdData() {
-        return adData;
-    }
-
-    public void setAdData(String adData) {
-        this.adData = adData;
-    }
 
     public String getComaDelimiter() {
         return comaDelimiter;
@@ -63,14 +42,6 @@ public class DataVar {
 
     public void setNewLineSeparator(String newLineSeparator) {
         this.newLineSeparator = newLineSeparator;
-    }
-
-    public String getDirtyLinks() {
-        return dirtyLinks;
-    }
-
-    public void setCsv(String csv) {
-        this.dirtyLinks = csv;
     }
 
     public Document getDoc() {
