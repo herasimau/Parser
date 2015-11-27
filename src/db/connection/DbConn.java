@@ -4,7 +4,7 @@ package db.connection;
 import java.sql.SQLException;
 import java.sql.*;
 
-public class Connection {
+public class DbConn {
     public java.sql.Connection conn;
     private String URL = "jdbc:mysql://localhost:3306/arenda";
     private String USERNAME = "root";

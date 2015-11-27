@@ -13,7 +13,9 @@ public class adDescription {
         Elements adDescs = doc.select("td[class=tdm_08");
         adDescription = adDescs.text().replace("Меб +", "").replace("Тв +",
                 "").replace("Хол +", "").replace("СтМ +", "").replace("Тел +",
-                "").replace("Инт +", "");
+                "").replace("Инт +", "").replace("Меб -", "").replace("Тв -",
+                "").replace("Хол -", "").replace("СтМ -", "").replace("Тел -",
+                "").replace("Инт -", "");
         return  adDescription;
     }
 

@@ -1,5 +1,4 @@
 import ad.parsers.Ad;
-import db.connection.Connection;
 
 public class Main {
 
